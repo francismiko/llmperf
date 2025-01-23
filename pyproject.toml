@@ -20,4 +20,5 @@ dependencies = ["pydantic<2.5",
                 "transformers",
                 "tqdm",
                 "boto3",
-                "google-cloud-aiplatform"]
+                "google-cloud-aiplatform",
+                "torch (>=2.5.1,<3.0.0)"]
