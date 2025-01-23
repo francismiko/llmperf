@@ -1,4 +1,4 @@
-# LLMPerf - fork by @francis
+# LLMPerf - forked by @francis
 
 A Tool for evaulation the performance of LLM APIs.
 
@@ -6,6 +6,7 @@ A Tool for evaulation the performance of LLM APIs.
 ```bash
 # make sure you have installed poetry
 cd llmperf
+
 poetry install
 poetry shell
 
