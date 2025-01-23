@@ -8,17 +8,17 @@ python token_benchmark_ray.py \
   --stddev-input-tokens 150 \
   --mean-output-tokens 150 \
   --stddev-output-tokens 10 \
-  --max-num-completed-requests 1000 \
+  --max-num-completed-requests 3 \
   --timeout 600 \
-  --num-concurrent-requests 100 \
+  --num-concurrent-requests 1 \
   --results-dir "result_outputs" \
   --llm-api openai \
   --additional-sampling-params '{}'
 
 if [ $? -eq 0 ]; then
-  echo "✅ Benchmark completed. Results saved to results.json"
+  echo "✅ Benchmark completed. Results saved to ./result_outputs"
 else
-  echo "❌ Benchmark failed. Check stderr.log for details"
+  echo "❌ Benchmark failed. Check for details"
 fi
 
 # --mean-input-tokens 输入 Token 的平均长度，模拟典型用户输入文本的规模

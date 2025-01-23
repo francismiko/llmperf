@@ -1,12 +1,16 @@
-# LLMPerf
+# LLMPerf - fork by @francis
 
 A Tool for evaulation the performance of LLM APIs.
 
 # Installation
 ```bash
-git clone https://github.com/ray-project/llmperf.git
+# make sure you have installed poetry
 cd llmperf
-pip install -e .
+poetry install
+poetry shell
+
+# then run benchmark.sh or use custom command line
+./benchmark.sh
 ```
 
 # Basic Usage
