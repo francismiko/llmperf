@@ -10,6 +10,9 @@ cd llmperf
 poetry install
 poetry shell
 
+# write down your environment variables
+touch .env
+
 # then run benchmark.sh or use custom command line
 ./benchmark.sh
 ```
